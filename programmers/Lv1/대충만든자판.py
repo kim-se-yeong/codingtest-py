@@ -6,6 +6,8 @@ def solution(keymap, targets):
     
     for key in keymap:
         # enumerate 함수를 이용해서 인덱스를 사용한다.
+        # start 옵션을 1로주면 idx는 1부터 시작하므로, idx + 1을 해주지 않아도 된다.
+        # for idx, char in enumerate(key, start=1):
         for idx, char in enumerate(key):
             # 만약 dic에 char이 없으면 추가한다. key: char, value: idx + 1
             if char not in dic:
